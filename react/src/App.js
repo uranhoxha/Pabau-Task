@@ -1,16 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import items from './items';
 
-import Body from "../src/Components/Body/body";
-
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      
-      <Body/>
-      
-    </div>
+   <div className='app'>
+        <ListComponent items={items}/>
+   </div>
   );
 }
 

@@ -3,7 +3,7 @@ exports.__esModule = true;
 var first_intern = {
     Interns: [{
             name: "Uran",
-            age: 21,
+            age: 19,
             skills: ["HTML", "CSS", "JavaScript"]
         }],
     Juniors: [],

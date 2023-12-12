@@ -3,7 +3,7 @@ import { Company } from './types';
 const first_intern: Company ={
     Interns:[{
         name: "Uran",
-        age: 21,
+        age: 19,
         skills: ["HTML", "CSS", "JavaScript"]
     }],
     Juniors: [],

@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const checkboxesContainer = document.querySelector('body');
         const checkboxesArray = Array.from(document.querySelectorAll('input[type="checkbox"]'));
       
-        checkboxesArray.sort(() => Math.random() - 0.5); // Shuffle the checkboxes
+        checkboxesArray.sort(() => Math.random() - 0.5);
       
-        checkboxesContainer.innerHTML = ''; // Clear the container
+        checkboxesContainer.innerHTML = '';
       
         checkboxesArray.forEach(checkbox => {
           const label = document.createElement('label');
@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
           checkboxesContainer.appendChild(document.createElement('br'));
         });
       
-        checkboxesContainer.appendChild(shuffleBtn); // Re-append the shuffle button
-        checkboxesContainer.appendChild(changeBtn); // Re-append the change button
-        checkboxesContainer.appendChild(showBtn); // Re-append the show button
+        checkboxesContainer.appendChild(shuffleBtn);
+        checkboxesContainer.appendChild(changeBtn); 
+        checkboxesContainer.appendChild(showBtn); 
       });
       
   
@@ -30,14 +30,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const newValues = ['New Internship', 'New Pabau', 'New Employment', 'New Career'];
       
         checkboxes.forEach((checkbox, index) => {
-          checkbox.value = newValues[index]; // Update the checkbox value
+          checkbox.value = newValues[index];
       
-          // Find the label associated with the checkbox
+          
           const label = checkbox.parentElement;
           if (label) {
-            label.textContent = ''; // Clear label content
-            label.appendChild(checkbox); // Re-append the checkbox
-            label.appendChild(document.createTextNode(newValues[index])); // Add new text node
+            label.textContent = '';
+            label.appendChild(checkbox); 
+            label.appendChild(document.createTextNode(newValues[index]));
           }
         });
       });
